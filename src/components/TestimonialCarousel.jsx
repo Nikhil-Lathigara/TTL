@@ -46,9 +46,9 @@ const TESTIMONIALS = [
     id: 5,
     name: 'Sarah Williams',
     role: 'Equestrian Performance Coach',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
     testimonial: 'As The Trainer Locker, I focus on building trust and communication between horse and rider, With over 15 years of experience.',
-    horseImage: 'https://images.unsplash.com/photo-1589751436113-c7a2e6170190?w=600&q=80',
+    horseImage: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80',
     badge: 'Trainer'
   },
 ];
@@ -72,7 +72,7 @@ const TestimonialCard = memo(({ testimonial, index }) => (
     </div>
 
     <div className="p-4 sm:p-5">
-      <p className="text-xs sm:text-sm text-gray-700 mb-4 sm:mb-6 leading-relaxed line-clamp-3 sm:line-clamp-4 min-h-[3rem] sm:min-h-[4rem]">
+      <p className="text-xs sm:text-sm text-gray-700 mb-4 sm:mb-6 leading-relaxed line-clamp-3 sm:line-clamp-4 min-h-12 sm:min-h-16">
         {testimonial.testimonial}
       </p>
 
@@ -80,7 +80,7 @@ const TestimonialCard = memo(({ testimonial, index }) => (
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-gray-200 flex-shrink-0"
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-gray-200 shrink-0"
         />
         <div className="min-w-0 flex-1">
           <h4 className="font-bold text-gray-900 text-xs sm:text-sm truncate">
@@ -112,7 +112,6 @@ const TestimonialCarousel = () => {
     nextSlide,
     prevSlide,
     goToSlide,
-    setIsAutoPlaying
   } = useCarousel(TESTIMONIALS.length, itemsPerPage, 10000);
 
   const visibleTestimonials = useMemo(() => 

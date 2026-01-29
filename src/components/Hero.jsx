@@ -8,7 +8,7 @@ const Hero = () => {
       
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[20000ms] scale-110 animate-subtle-zoom"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-20000ms scale-110 animate-subtle-zoom"
         style={{ backgroundImage: "url('/hero.gif')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>

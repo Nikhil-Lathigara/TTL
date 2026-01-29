@@ -26,7 +26,7 @@ const Subscribe = () => {
   return (
     <div className="w-full">
       {/* Hero Banner Section */}
-      <section className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden">
+      <section className="relative h-125 md:h-150 lg:h-175 overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/banner1.jpg"
