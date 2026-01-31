@@ -2,10 +2,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProductShowcase from './components/ProductShowcase';
 import ProductGrid from './components/ProductGrid';
-import Features from './components/Features';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
-import HeroProductSection from './components/Heroproductsection';
+import HeroProductSection from './components/HeroProductSection';
 import TestimonialCarousel from './components/TestimonialCarousel';
 import Subscribe from './components/Subscribe';
 
